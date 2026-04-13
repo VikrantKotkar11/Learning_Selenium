@@ -8,6 +8,7 @@ import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.support.decorators.WebDriverDecorator;
 import org.testng.Assert;
 import org.testng.annotations.Test;
+import io.github.bonigarcia.wdm.WebDriverManager;
 
 import java.util.List;
 import java.util.Set;

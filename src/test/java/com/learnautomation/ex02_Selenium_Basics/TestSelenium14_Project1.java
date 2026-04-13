@@ -1,5 +1,7 @@
 package com.learnautomation.ex02_Selenium_Basics;
 
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -12,11 +14,11 @@ public class TestSelenium14_Project1 {
     @Test(description = "Verify the emailid ,password and verify the errors")
     public void test_navigate_vwo_login() throws Exception{
 
-        EdgeOptions edgeOptions = new EdgeOptions();
-        edgeOptions.addArguments("--start-maximized");
+        //EdgeOptions edgeOptions = new EdgeOptions();
+        ChromeOptions options = new ChromeOptions();
+        options.addArguments("--start-maximized");
 
-
-        WebDriver driver = new EdgeDriver(edgeOptions);
+        WebDriver driver = new ChromeDriver(options);
 //        driver.navigate().to("https://app.vwo.com");
         driver.get("https://app.vwo.com");
 
